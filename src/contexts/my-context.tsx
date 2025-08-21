@@ -21,7 +21,6 @@ export const MyProvider: React.FC<MyProviderProps> = ({ children }) => {
   );
 };
 
-// 4. Custom hook to consume the context
 export const useMyContext = (): MyContextType => {
   const context = useContext(MyContext);
   if (!context) {
